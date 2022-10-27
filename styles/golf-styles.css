@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Noto+Sans+JP&family=Outfit:wght@500&family=Roboto:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+:root {
+  --main-blue: #06081f;
+  --white: #fff;
+  --light-grey: #5a5757;
+  --teal: #50cbd1;
+}
+
+
+body{
+    background-color: var(--main-blue);
+}
+
+.container{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin: 8rem 0 10rem 0;
+    animation: 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 0s 1 slideInFromLeft;
+}
+
+h1{
+    color: #fff;
+}
+
+.teal > td{
+  color: var(--teal);
+}
+
+.scorecard{
+    border: 5px solid var(--teal);
+    border-radius: 5px;
+    background-color: var(--main-blue);
+    box-shadow: 30px 75px 50px #000;
+    padding: 2rem;
+    margin-top: 1rem;
+    height: 40vh;
+    width: 80vw;
+}
+
+.scorecard-container{
+  gap: 5rem;
+}
+tr{
+    border: none;
+    height: 20%;
+}
+
+td, th{
+    color: var(--white);
+    border: 1px solid var(--teal);
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 10vw;
+    height: 5vh;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: 100;
+    font-weight: bold;
+}
+
+th{
+  font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+h3{
+    font-size: 2rem;
+}
+
+hr{
+    animation: 8s ease-in-out backAndForth infinite;
+    height: 4px;
+    background-color: var(--teal);
+    width: 50%;
+    border: transparent;
+}
+
+.title-hr{
+  animation: none;
+  width: 100%;
+  background-color: var(--teal);
+  border: transparent;
+}
+
+td{
+   
+    text-align: center;
+}
+
+
+.table-title{
+    color: #fff;
+    text-align: center;
+}
+
+a{
+    cursor: pointer;
+}
+.fa-arrow-left{
+    padding: 1rem 0 0 2rem;
+    transition: 1s ease;
+
+}
+
+#Home{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--main-blue);
+    width: 100%;
+    height: 4.5rem;
+    color: var(--teal);
+    font-size: 2.5rem;
+    transition: .5s ease-in-out;
+    z-index: 2;
+    box-shadow: 0px 15px 10px #000;
+    border-bottom: 2px solid var(--white);
+    animation: 2s ease-in-out QuickbackAndForth infinite;
+}
+
+#Home:hover{
+    font-size: 2.6rem;
+    animation: none;
+}
+
+.mobile-container{
+    display: none;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes backAndForth {
+    0% {
+      transform: translateX(0);
+      width: 50%;
+    }
+  
+    50% {
+      transform: translateX(100%);
+      width: 50%;
+    }
+  
+    100% {
+      transform: translateX(0);
+      width: 50%;
+    }
+  }
+
+
+  @keyframes QuickbackAndForth {
+    0% {
+     color: var(--teal);
+      
+    }
+  
+    50% {
+      color: #fff;
+    }
+  
+  
+    100% {
+      color: var(--teal);
+    }
+}
+
+
+  @media (max-width: 890px){
+      .scorecard-container{
+          display: none !important;
+      }
+
+      .container{
+        margin: 10rem 0;
+      }
+
+      .table-title{
+        font-size: 1.5rem;
+      }
+      .mobile-container{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+  
+
+      }
+      .mobile-scorecard-container{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+  
+      }
+      th, td{
+        /* width: 100%; */
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 100;
+      }
+      .mobile-scorecard{
+        border: 2px solid var(--teal);
+        padding: .5rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+      }
+
+      table{
+        box-shadow: 10px 25px 10px #000;
+      }
+
+
+  }
+
+
+  @media (min-width: 2500px){
+    #Home{
+      height: 8rem;
+      font-size: 5rem;
+      padding-left: 4rem;
+    }
+
+    h1{
+      font-size: 4rem;
+      margin-top: 4rem;
+    }
+    h2{
+      font-size: 3rem;
+    }
+
+    h4{
+      font-size: 2rem;
+      width: 14.5rem;
+      border-bottom: 4px solid var(--teal);
+    }
+
+    a{
+      box-shadow: 1rem 1rem var(--teal);
+      border: 2px solid var(--white);
+      height: 14.5rem;
+      width: 14.5rem;
+      margin-top: 2rem;
+    }
+
+    .table-title{
+      font-size: 4rem;
+    }
+
+    .scorecard{
+      border: 10px solid var(--teal);
+    }
+
+    th, td{
+      font-size: 3rem;
+      border: 2px solid var(--teal);
+    }
+
+
+
+  }
+
+

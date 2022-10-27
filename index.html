@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Tyler Byrne | Front End Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tyler Byrne | Front End Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-mouse.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6881dbcd5f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- MAIN CONTAINER -->
+<div class="container">
+    <div class="circle-container">
+        <div class="circle">
+            <button id="close" name="close menu" aria-label="close menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <button id="open" name="open menu" aria-label="open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+    <main>
+<!-- MAIN NAVIGATION START -->
+        <header>
+        <div class="main-nav">
+            <ul class="main-nav-ul">
+                <div class="main-nav-menu-item"><span class="menu-num">.01</span> <a  id="menu-about" href="#">About</a></div>
+                <div class="main-nav-menu-item"><span class="menu-num">.02</span><a id="menu-skills" href="#"> Skills</a></div>
+                <div class="main-nav-menu-item"><span class="menu-num">.03</span><a id="menu-projects" href="#"> Projects</a></div>
+                <div class="main-nav-menu-item"><span class="menu-num">.04</span><a id="menu-experience" href="#"> Experience</a></div>
+            </ul>
+        </div>
+        <div class="drop-down">
+            <div class="drop-down-header">
+                <a href="#" class="files">Files</a>
+                <i class="fa-solid fa-angle-down" id="down-arrow"></i>
+            </div>
+            <hr>
+            <a class="resume" href="files/Tyler Byrne.pdf" target="_blank" alt="resume">Resume</a>
+            <a href="files/Tyler Byrne Letter of Recommendation 1.docx (1).pdf" target="_blank">Letter of Rec 1</a>
+            <a href="files/Tyler Byrne Letter of Recommendation 2.pdf" target="_blank">Letter of Rec 2</a>
+        </div> 
+        </header>
+        <script type="text/javascript">
+            $(".main-nav").hide();
+        </script>
+<!-- MAIN NAVIGATION END -->
+
+<!-- MAIN CONTENT START -->
+        <div class="main-content">
+            <!-- HOME SECTION START -->
+            <section id="Home">
+            <header class="home-header">
+                <p class="home-hello">Hello, I am</p>
+                <div class="squares">
+                   <div class="square-1">T</div>
+                   <div class="square-2">Y</div>
+                   <div class="square-3">B</div>
+                   <div class="square-4">Y</div>
+               </div>
+            </header>
+            <h2 class="home-name">Tyler Byrne</h2>
+            <p class="home-web">Front End Developer/Designer</p>
+            <p class="home-bio">I am a front end developer fresh out of college looking to focus my creative energy on projects that challenge and excite me. I’m currently working on sharpening my skills in development and design while introducing new technologies to help me achieve my vision </p>
+            <button class="home-contact">Contact</button>
+            <i class="fa-solid fa-angle-up" id="arrow-up"></i>
+            </section>
+            <!-- HOME SECTION END -->
+            <hr class="divider" id="about-stroll">
+            <!-- ABOUT SECTION START-->
+            <section id="about">
+                <div class="about-container">
+                    <div class="about-header">
+                        <div class="about-title section-title"><span class="menu-num">.01</span> About</div>
+                        <hr class="title-hr">
+                    </div>
+                    <div class="about-content">
+                    <div class="about-bio">
+                        <p>
+                        In June of 2022 I graduated from <span class="bold">DePaul University</span>. I have also completed or am completing many online bootcamps such as the <span class="bold">Udemy Web Developer Bootcamp</span> by Colt Steele. In my coursework I have covered many areas of Computer Science but what has really stood out to me is front-end development and design. My love for front-end development stems from my passion for programming along with my need to be creative. I’m looking forward to starting my career at a place where I can utilize my skills in HTML, CSS, design, JavaScript and Python.</p>
+                        <p class="space"></p>
+                        
+
+                        <p>Aside from making projects for the web I love to play competitive <span class="bold">golf</span> in tournamnets around Chicago in my free time. I also play the <span class="bold">drums</span> and enjoy gigging around various venues and restaurants in the Chicago area.</p>
+                        <p class="space"></p>
+                        
+                       
+                    </div>
+                    <img  id="headshot" src="images/avataaars (3).png" alt="Tyler Byrne headshot" width="25%" >
+                    </div>
+                </div>
+            </section>
+            <!-- ABOUT SECTION END -->
+            <hr class="divider" id="skills-stroll">
+            <!-- SKILLS SECTION START -->
+            <section id="skills">
+                <div class="skills-container">
+                    <div class="skills-header">
+                        <div class="skills-title section-title"><span class="menu-num">.02</span> Skills</div>
+                        <hr class="title-hr">
+                    </div>
+                    <div class="skills-sections">
+                        <div class="html">
+                            <label for="html">HTML</label>
+                            <i class="fab fa-html5" name="html" name="html" id="html"></i>
+                        </div>
+                        <div class="css">
+                            <label for="css">CSS</label>
+                            <i class="fab fa-css3-alt" name="css"></i>
+                        </div>
+                        <div class="js">
+                            <label for="js">JavaScript</label>
+                            <i class="fab fa-js-square" name="js"></i>
+                        </div>
+                        <div class="python">
+                            <label for="python">Python</label>
+                            <i class="fab fa-python" name="python"></i>
+                        </div>
+                        <div class="wordpress">
+                            <label for="wordpress">Wordpress</label>
+                            <i class="fab fa-wordpress" name="wordpress"></i>
+                        </div>
+                        <div class="figma-container">
+                            <label for="figma">Figma</label>
+                            <i class="fab fa-figma" name="figma"></i>
+                        </div>
+                        <div class="bootstrap">
+                            <label for="bootstrap">Bootstrap</label>
+                            <i class="fa-brands fa-bootstrap" name="bootstrap"></i>
+                        </div>
+                        <div class="Jquery">
+                            <label for="jquery">Jquery</label>
+                            <i class="jquery" name="jquery"></i>
+                        </div>
+                    </div>
+                <div class="loading-skills">
+                    <div class="loading-skills-title section-sub-title">Loading<span class="dot-1">.</span> <span class="dot-2">.</span> <span class="dot-3">.</span></div>
+                    <div class="loading-skills-sections">
+                        <div class="react">
+                            <label for="react">React</label>
+                            <i class="fab fa-react" name="react"></i>
+                        </div>
+                        <div class="git">
+                            <label for="git">Git</label>
+                            <i class="fa-brands fa-git-alt" name="git"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SKILLS SECTION END -->
+        <hr class="divider" id="projects-stroll">
+        <!-- PROJECTS SECTION START -->
+        <section id="projects">
+            <div class="projects-container">
+                <div class="projects-title section-title"><span class="menu-num">.03</span> Projects</div>
+                    <hr class="title-hr">
+                    <div class="project-sections">
+                    <div class="portfolio-site">
+                        <a href="index.html"><img  class="portfolio-site-img" src="images/portfolio-site.png" alt="Tyler Byrne portfolio website"></a>
+                        <div class="project-title-tools">
+                        <h3 class="portfolio-site-title">
+                            Tyler Byrne Portfoilio Site
+                        </h3>
+                        <div class="project-tools">
+                        <i class="fab fa-html5" name="html" name="html" id="html" title="HTML"></i>
+                        <i class="fab fa-css3-alt" name="css" title="CSS"></i>
+                        <i class="fab fa-js-square" name="js" title="JavaScript"></i>
+                        <i class="jquery" name="jquery" title="Jquery"></i>
+                        <i class="fab fa-figma" name="figma" title="Figma"></i>
+                        </div>
+                        </div>
+                        <p class="portfolio-site-description">
+                            This is my current personal website portfolio. This layout is <span class="bold">responsive</span> to all screen sizes. In this project I wanted to show that I enjoy simple but functional design and allow viewers to learn a bit about me. I have always been a fan of the phrase <span class="bold">"Simplicity is the ultimate sophistication"</span>, and I think that inspired the design of this project. I used <span class="bold"> HTML, CSS, JavaScript, Jquery, Figma, and Font Awesome</span> to make this site. This was the most fun I’ve ever had making a project as I had total reign of the design and development. This gave me an oppourtunity to play around with a bunch of different animations and layouts while utilizing <span class="bold">flexbox</span> and <span class="bold">grid</span>. 
+                        </p>
+                    </div>
+                    <div class="wordpress-help-site">
+                        <p class="wordpress-site-description">
+                            This WordPress site was created by myself and my <span class="bold">agile team</span> during my internship at DePaul University.This website acts as a hub for students taking IT320 for questions about course coursework and contacting their professor if needed. We created the site using <span class="bold">Wordpress</span> and got an oppourtunity to use many <span class="bold">plugins</span> I had never worked with before.<br><br>
+                            <span class="wordpress-reference"><span class="bold">Due to plugin upgrades this site is currently undergoing maintenance</span><br> For reference please contact the acting client of this project and my DePaul professer, Michael Chase. <span class="wordpress-reference-contact"><a href="tel:312-362-1352" name="telephone number"> Phone</a><a href="mailto:mchase2@cdm.depaul.edu" name="email address" target="_blank">Email</a></span></span>
+                        </p>
+                        <div class="project-title-tools">
+                            <h3 class="wordpress-site-title">
+                                Wordpress IT 320 Course Help Site
+                            </h3>
+                            <div class="project-tools">
+                                <i class="fab fa-wordpress" name="wordpress" title="WordPress"></i>
+                                <i class="fab fa-html5" name="html" name="html" id="html" title="HTML"></i>
+                            </div>
+                            </div>
+                        <a href="https://cdm-depaul.tech/" target="_blank">
+                        <img src="images/Wordpress-help-site.png" alt="wordpress help website"></a>
+                    </div>
+                    <div class="bill-site">
+                        <a href="Bill Splitter/index-bill.html" name="Bill Splitter App" target="_blank"><img  class="bill-site-img" src="images/tip-calc.png" alt=""></a>
+                        <div class="project-title-tools">
+                            <h3 class="bill-site-title">
+                                Bill Splitter Web App
+                            </h3>
+                            <div class="project-tools">
+                            <i class="fab fa-html5" name="html" name="html" id="html" title="HTML"></i>
+                            <i class="fab fa-css3-alt" name="css" title="CSS"></i>
+                            <i class="fab fa-js-square" name="js" title="JavaScript"></i>
+                            </div>
+                            </div>
+                        <p class="bill-site-description">
+                            This is a payment calculator I made using <span class="bold">HTML, CSS, and Javascript</span>. This layout is <span class="bold">responsive</span> to all screen sizes. This web app takes in user input for the bill amount, tip percentage, and amount of people splitting the bill. It then presents the user with the total tip per person and total amount per person. This has been a life saver for my friends and I.
+                        </p>
+                    </div>
+                    </div>
+                    <div class="design-section">
+                        <h3 class="section-sub-title">Design Work in Figma</h3>
+                        <hr>
+                        <div class="design-projects">
+                            <div class="mercedes">
+                            <h2>Mercedes Landing Page</h2>
+                            <hr class="design-hr">
+                            <a href="images/Mercedes.png" target="_blank"><img class="design-img" src="images/Mercedes.png" alt="Mercedes Benz EQ Landing Page"></a>
+                            </div>
+                            <div class="ping">
+                                <h2>PING Landing Page</h2>
+                                <hr class="design-hr">
+                                <a href="images/ping.png" target="_blank"><img class="design-img" src="images/ping.png" alt="ping landing page"></a>
+                            </div>
+                            <div class="cooking">
+                                <h2>Recipes App Design</h2>
+                                <hr class="design-hr">
+                                <a href="images/cooking.png" target="_blank"><img class="design-img" src="images/cooking.png" alt="Recipes app wireframes"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- PROJECTS SECTION END -->
+    <hr class="divider" id="experience-stroll">
+
+    <!-- EXPERIENCE SECTION START -->
+    <section id="experience">
+        <div class="experience-container">
+            <div class="experience-title section-title"><span class="menu-num">.04</span>Experience</div>
+            <hr class="title-hr">
+            <div class="reference-letters">
+                <div class="letter-1">
+                    <a href="files/Tyler Byrne Letter of Recommendation 1.docx (1).pdf" target="_blank">Recommendation Letter 1</a>
+                </div>
+                <div class="letter-2">
+                    <a href="files/Tyler Byrne Letter of Recommendation 2.pdf" target="_blank">Recommendation Letter 2</a>
+                </div>
+            </div>
+            <div class="experience-sections">
+                <div class="job-one">
+                    <div>
+                    <p class="section-sub-title">Agile Wordpress Developer Intern</p>
+                    <p class="sub-title-two">
+                        DePaul University - September 2021 - March 2022
+                    </p>
+                    </div>
+                    <div class="experience-arrow">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <i class="fa-solid fa-arrow-down"></i>
+                            <ul class="job-one-description">
+                            <li>Took on a leading role in an <span class="bold">agile team</span> to develop and design a WordPress website</li>
+                            <li>Met with clients weekly for <span class="bold">sprint planning</span> and <span class="bold">sprint review</span> </</li>
+                            <li>Ran <span class="bold">plugin analysis</span> to ensure the best product for our client</li>
+                            <li>Wrote a detailed training guide for the website in order to maximize the sites usability</li>
+                            </ul>
+                </div>
+            </div>
+            <div class="job-two">
+                <div>
+                    <p class="section-sub-title">Information Technology Technician</p>
+                    <p class="sub-title-two">
+                            DePaul University - June 2021 - Present
+                    </p>
+                </div>
+                <div class="experience-arrow">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <ul class="job-two-description">
+                        <li>Completed trouble tickets under pressure while using <span class="bold">ServiceNow</span> to ensure repairs of technology in classroom and maintain class/meeting schedules</li>
+                        <li><span class="bold">Troubleshot</span> consistent computer issues to maintain zero downtime for staff and students
+                        </li>
+                        <li><span class="bold">Presented</span> to and <span class="bold">trained</span> <span class="bold">400+ staff members</span> to operate new computer system with universities new classroom user-interface</li>
+                        <li>Re-imaged 500 computers in order to keep DePaul up-to-date on latest software and to allow users access to the best software possible</li>
+                        <li><span class="bold">Installed computers, projectors, and monitors</span> in order to provide the necessary equipment for high-tech lectures</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EXPERIENCE SECTION END -->
+
+    <!-- CONTACT SECTION START -->
+    <section id="Contact">
+        <div class="contact-container">
+            <h2 class="contact-header">Get In Touch</h2>
+            <div class="contact-sections">
+                <div class="phone">
+                    <a href="tel:630-797-0652" name="telephone number"><i class= "fas fa-phone"></i></a>
+                </div>
+                <div class="email">
+                    <a href="mailto:tybyrnedpu@gmail.com" name="email address" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="lindken">
+                <a href="https://www.linkedin.com/in/tyler-byrne-b26b00200/" name="lindken" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- CONTACT SECTION END -->
+</div>
+</main>
+<!-- MAIN CONTENT END -->
+<!-- SIDE NAV START-->
+    <nav id="sideNav">
+        <ul>
+            <a href="music.html"><li>Music Library</li></a>
+            <a href="movies.html"><li>Film and Tv Library</li></a>
+            <a href="golf.html"><li>2022 Golf Scores</li></a>
+        </ul>
+        <!-- MOBILE SIDE NAV START -->
+        <ol id="mobile-sideNav">
+            <div class="main-nav-menu-item"><span class="menu-num">.01</span> <a id="menuAbout">About</a></div>
+            <div class="main-nav-menu-item"><span class="menu-num">.02</span><a id="menuSkills"> Skills</a></div>
+            <div class="main-nav-menu-item"><span class="menu-num">.03</span><a id="menuProjects"> Projects</a></div>
+            <div class="main-nav-menu-item"><span class="menu-num">.04</span><a id="menuExperience"> Experience</a></div>
+            <a class="resume" href="files/Tyler Byrne.pdf" target="_blank" alt="resume">Resume</a>
+            <a href="music.html"><li>Currently Playing Music</li></a>
+            <a href="movies.html"><li>Favorite Movies</li></a>
+            <a href="golf.html"><li>2022 Golf Scores</li></a>
+    </ol>
+    <!-- MOBILE SIDE NAV END -->
+    </nav>
+<!-- SIDE NAV END -->
+
+<!-- CURSORS START -->
+    <div class="cursors">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- CURSORS END -->
+</div>
+<!-- MAIN CONTAINER END -->
+    <script src="scripts/apps.js"></script>
+    <script src="scripts/apps-mouse.js"></script>
+</body>
+</html>

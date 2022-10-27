@@ -1,0 +1,41 @@
+:root {
+    --main-blue: #06081f;
+    --white: #fff;
+    --light-grey: #5a5757;
+    --teal: #50cbd1;
+  }
+  
+  
+  div.cursors div {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: 3px solid var(--teal);
+    border-radius: 50%;
+    z-index: 10000;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  
+
+  @media(max-width:1050px){
+    div.cursors div{
+        display: none;
+    }
+
+  }
+
+@media (min-width: 2500px){
+  div.cursors div{
+    width: 35px;
+    height: 35px;
+    border: 5px solid var(--teal);
+  }
+
+}
+  
