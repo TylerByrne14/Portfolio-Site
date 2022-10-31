@@ -1152,6 +1152,7 @@ p:hover{
 
 #Home{
   margin-top: .5rem;
+  gap: 2rem
 }
 .home-name{
   font-size: 2.5rem;
