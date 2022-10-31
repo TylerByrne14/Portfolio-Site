@@ -416,6 +416,22 @@ main{
   background-color: var(--teal);
 }
 
+.contact-home{
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.fa-github{
+  color: var(--teal);
+  font-size: 3.5rem;
+}
+
+.fa-github:hover{
+  cursor: pointer;
+  opacity: .6;
+}
+
 .bold{
   font-weight: bold;
   color: var(--teal);
