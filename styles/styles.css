@@ -115,6 +115,7 @@ body {
 
 a{
   outline: none;
+  cursor: pointer;
 }
 
 .container.show-nav + nav li {
@@ -315,9 +316,6 @@ header{
   gap: 0.2rem;
 }
 
-.main-nav-menu-item:active{
-  background-color: #50cbd1;
-}
 
 .main-nav a {
   font-size: 140%;
@@ -327,15 +325,11 @@ header{
   text-decoration: none;
 }
 
-
-
-
 .main-nav-menu-item> a:hover {
   color: var(--teal);
 }
-a{
-  cursor: pointer;
-}
+
+
 
 .menu-num {
   color: var(--teal);
