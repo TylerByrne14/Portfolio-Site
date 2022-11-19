@@ -627,7 +627,7 @@ p:hover{
   flex-direction: column;
   align-items: center;
   gap: 20rem;
-  margin: 10rem 0;
+  margin: 10rem 0 20rem 0;
 }
 
 .project-sections > div > a > img{
@@ -647,7 +647,7 @@ p:hover{
   justify-content: center;
 }
 
-.portfolio-site, .wordpress-help-site, .bill-site{
+.portfolio-site, .wordpress-help-site, .bill-site, .aurora-grove-site{
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -669,7 +669,7 @@ p:hover{
 }
 
 
-.wordpress-site-description{
+.wordpress-site-description, .aurora-grove-description{
   position: absolute;
   border: 5px solid var(--white);
   border-radius: 10px;
@@ -707,7 +707,7 @@ p:hover{
   text-align: center;
 }
 
-.portfolio-site-title, .wordpress-site-title, .bill-site-title{
+.portfolio-site-title, .wordpress-site-title, .bill-site-title, .aurora-grove-title{
   border-bottom: 2px solid var(--teal);
 }
 
@@ -721,6 +721,7 @@ p:hover{
 
 .project-tools > i{
   font-size: 4rem;
+  color: var(--teal);
 }
 
 .project-tools > .jquery{
@@ -979,7 +980,7 @@ p:hover{
 .fa-js-square,
 .fa-python,
 .fa-wordpress,
-.fa-database, .fa-react, .fa-figma, .fa-git-alt, .fa-bootstrap{
+.fa-database, .fa-react, .fa-figma, .fa-git-alt, .fa-bootstrap, .fa-sass{
   font-size: 6rem;
 }
 
@@ -1069,7 +1070,7 @@ p:hover{
 
 /* Projects 890px */
 
-.portfolio-site-description, .wordpress-site-description, .bill-site-description{
+.portfolio-site-description, .wordpress-site-description, .bill-site-description, .aurora-grove-description{
   position: relative;
   top: auto;
   left: auto;
@@ -1092,7 +1093,7 @@ p:hover{
   height: 80%;
 }
 
-.portfolio-site, .wordpress-help-site, .bill-site{
+.portfolio-site, .wordpress-help-site, .bill-site, .aurora-grove-site{
   display: grid;
   grid-template-rows: 1fr;
   gap: 2rem;
@@ -1103,7 +1104,7 @@ p:hover{
   grid-row: 1/2;
 
 }
-.wordpress-site-description{
+.wordpress-site-description, .aurora-grove-description{
   grid-row: 3/4;
 }
 .reference-letters{
@@ -1186,7 +1187,7 @@ font-size: 1.2rem;
 .fa-js-square,
 .fa-python,
 .fa-wordpress,
-.fa-database, .fa-react, .fa-figma, .fa-git-alt, .fa-bootstrap{
+.fa-database, .fa-react, .fa-figma, .fa-git-alt, .fa-bootstrap, .fa-sass{
   font-size: 4rem;
 }
 
@@ -1224,7 +1225,7 @@ font-size: 1.2rem;
 .project-sections{
   margin: 5rem 0;
 }
-.portfolio-site-description, .wordpress-site-description, .bill-site-description{
+.portfolio-site-description, .wordpress-site-description, .bill-site-description, .aurora-grove-description{
   width: 100%;
   line-height: 1.5rem;
 }
@@ -1427,7 +1428,7 @@ font-size: 1.2rem;
   font-size: 3rem;
   margin-top: 5rem;
 }
-.fa-html5, .fa-css3-alt, .fa-js-square, .fa-python, .fa-wordpress, .fa-database, .fa-react, .fa-figma, .fa-git-alt, .fa-bootstrap{
+.fa-html5, .fa-css3-alt, .fa-js-square, .fa-python, .fa-wordpress, .fa-sass, .fa-database, .fa-react, .fa-figma, .fa-git-alt, .fa-bootstrap{
   font-size: 14rem;
 }
 
@@ -1471,7 +1472,7 @@ font-size: 1.2rem;
   gap: 30rem;
 }
 
-.portfolio-site-description, .bill-site-description, .wordpress-site-description{
+.portfolio-site-description, .bill-site-description, .wordpress-site-description, .aurora-grove-description{
   font-size: 1.8rem;
 }
 
