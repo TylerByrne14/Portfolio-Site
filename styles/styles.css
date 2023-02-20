@@ -698,7 +698,8 @@ section.show {
 .portfolio-site-title,
 .wordpress-site-title,
 .bill-site-title,
-.aurora-grove-title {
+.aurora-grove-title,
+.leo-site-title {
   border-bottom: 2px solid var(--teal);
 }
 
@@ -1053,7 +1054,8 @@ section.show {
   .portfolio-site-description,
   .wordpress-site-description,
   .bill-site-description,
-  .aurora-grove-description {
+  .aurora-grove-description,
+  .leo-site-description {
     position: relative;
     top: auto;
     left: auto;
@@ -1078,7 +1080,8 @@ section.show {
   .portfolio-site,
   .wordpress-help-site,
   .bill-site,
-  .aurora-grove-site {
+  .aurora-grove-site,
+  .leo-site {
     display: grid;
     grid-template-rows: 1fr;
     gap: 2rem;
@@ -1214,7 +1217,8 @@ section.show {
   .portfolio-site-description,
   .wordpress-site-description,
   .bill-site-description,
-  .aurora-grove-description {
+  .aurora-grove-description,
+  .leo-site-description {
     width: 100%;
     line-height: 1.5rem;
   }
@@ -1465,7 +1469,8 @@ section.show {
   .portfolio-site-description,
   .bill-site-description,
   .wordpress-site-description,
-  .aurora-grove-description {
+  .aurora-grove-description,
+  .leo-site-description {
     font-size: 1.8rem;
   }
 
