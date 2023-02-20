@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Tai+Heritage+Pro&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+:root {
+  --bg-grey: rgb(161, 160, 160);
+  --leo-red: #ff0101;
+  --black: rgb(14, 14, 14);
+}
+
+body {
+  /* overflow: hidden; */
+}
+
+.container {
+  background-color: var(--bg-grey);
+}
+
+/* HEADER STYLES */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.1rem solid aliceblue;
+  background-color: var(--bg-grey);
+  height: 14vh;
+}
+
+.title {
+  font-size: 3rem;
+  color: aliceblue;
+  font-weight: 300;
+  font-family: "Tai Heritage Pro", sans-serif;
+  text-transform: uppercase;
+}
+
+/* NAV STYLES */
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.1rem solid aliceblue;
+  height: 10vh;
+}
+
+.nav > li {
+  border-right: 0.1rem solid aliceblue;
+  background-color: var(--bg-grey);
+  border-top: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav > li > a {
+  color: var(--black);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav > li {
+  transition: 1s ease-in-out;
+}
+
+.nav > :nth-child(1) {
+  border-left: none;
+}
+
+.nav > :last-child {
+  border-right: none;
+}
+
+li:hover {
+  background-color: aliceblue;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+/* SLIDER STYLES */
+.slider-container {
+  background-color: var(--bg-grey);
+  padding: 0.5rem 0;
+  border-bottom: 0.1rem solid aliceblue;
+}
+
+.slider {
+  width: 14vw;
+  height: 0.2rem;
+  background-color: var(--leo-red);
+  margin: 0 1rem;
+  transition: 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/* MAIN STYLES */
+
+.side-container {
+  display: flex;
+  height: 75vh;
+  overflow-y: hidden;
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+  transition: transform 1s ease-in-out;
+}
+
+.right-side {
+  transform: translateY(-375vh);
+}
+
+.left-home {
+  min-height: 75vh;
+  width: 100%;
+  background-image: url(images/Leonardo-Da-Vinci.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  /* border-right: 0.1rem solid rgb(255, 255, 255); */
+}
+
+.right-home {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 3rem;
+  background-color: var(--bg-grey);
+  border-left: 0.1rem solid aliceblue;
+}
+
+.name {
+  color: aliceblue;
+  font-weight: 300;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.years {
+  color: aliceblue;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.bio {
+  color: aliceblue;
+  font-size: 1.2rem;
+}
+
+.home-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 15rem;
+  width: 70%;
+  margin-bottom: 5rem;
+}
+
+.links {
+  width: 100%;
+}
+
+.links-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links-list > li > a {
+  text-decoration: none;
+  color: var(--leo-red);
+  font-weight: 300;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.links-list > li:hover > a {
+  color: #000;
+  transition: 1s ease-in-out;
+}
+
+.links-list > li {
+  border-right: 0.1rem solid aliceblue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in-out;
+}
+
+.links-list > :nth-child(1) {
+  border-left: 0.1rem solid aliceblue;
+}
+
+.links-list > :last-child {
+  border-right: 0.1rem solid aliceblue;
+}
+
+.image {
+  width: 20rem;
+  padding: 1rem;
+  box-shadow: 2px 20px 30px 12px #000;
+  background-color: #fff;
+}
+
+.image-container {
+  background-color: aliceblue;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resize-large {
+  width: 30rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5rem;
+  height: 100%;
+  background-color: var(--bg-grey);
+  color: aliceblue;
+}
+
+.info-heading {
+  text-align: center;
+}
+
+.info-heading-hr {
+  border: 1px solid var(--leo-red);
+  margin-top: 0.2rem;
+  width: 20rem;
+}
+.work-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.info-bio {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.timeframe {
+  font-size: 1.5rem;
+}
+
+.mobile-container {
+  display: none;
+}
+
+@media (max-width: 1190px) {
+  .home-heading {
+    width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    display: none;
+  }
+
+  .mobile-container {
+    display: block;
+  }
+  header {
+    height: 100vh;
+    background-color: var(--bg-grey);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    background-image: url(images/Leonardo-Da-Vinci.jpg);
+    background-position: center;
+  }
+  .background-tint {
+    background-color: rgba(0, 0, 0, 0.713);
+    background-blend-mode: multiply;
+  }
+  .mobile-home-heading {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mobile-name {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .mobile-bio {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .links-list > :nth-child(1) {
+    border-left: none;
+  }
+
+  .links-list > :last-child {
+    border-right: none;
+  }
+
+  .links-list > li:hover > a {
+    color: var(--leo-red);
+  }
+
+  li:hover {
+    background-color: transparent;
+  }
+
+  .down-arrow {
+    color: aliceblue;
+    animation: 1s infinite bounce;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .mobile-nav > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16.6vh;
+    background-color: var(--bg-grey);
+    border-bottom: 0.1rem solid aliceblue;
+    width: 100%;
+  }
+
+  .mobile-nav > li > a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+  }
+
+  .mobile-piece-container {
+    height: 0;
+  }
+
+  .heightAuto {
+    height: auto;
+  }
+
+  .mobile-info-container {
+    background-color: var(--bg-grey);
+    padding: 2rem;
+    color: aliceblue;
+    border-bottom: 0.1rem solid aliceblue;
+  }
+
+  .mobile-info-heading-hr {
+    border: 1px solid var(--leo-red);
+    width: 60%;
+  }
+
+  .mobile-timeframe {
+    margin-bottom: 1rem;
+  }
+
+  .mobile-info-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .mobile-work-title {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+
+  .mobile-info-bio {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+/* animation */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY((0px));
+  }
+}
