@@ -463,6 +463,14 @@ p:hover {
 .section-title {
   font-size: 3rem;
 }
+section {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+section.show {
+  opacity: 1;
+}
 
 .about-content {
   font-size: 1rem;
