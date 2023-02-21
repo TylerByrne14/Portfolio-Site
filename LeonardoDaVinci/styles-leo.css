@@ -118,7 +118,7 @@ li:hover {
 .left-home {
   min-height: 75vh;
   width: 100%;
-  background-image: url(images/Leonardo-Da-Vinci.jpg);
+  background-image: url(images/Leonardo-Da-Vinci.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -286,7 +286,7 @@ li:hover {
     justify-content: space-evenly;
     align-items: center;
     padding: 2rem;
-    background-image: url(images/Leonardo-Da-Vinci.jpg);
+    background-image: url(images/Leonardo-Da-Vinci.webp);
     background-position: center;
   }
   .background-tint {
