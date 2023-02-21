@@ -643,7 +643,7 @@ section.show {
 
 .portfolio-site-description,
 .bill-site-description,
-.leo-site-description {
+.aurora-grove-description {
   position: absolute;
   border: 5px solid var(--white);
   border-radius: 10px;
@@ -657,7 +657,7 @@ section.show {
 }
 
 .wordpress-site-description,
-.aurora-grove-description {
+.leo-site-description {
   position: absolute;
   border: 5px solid var(--white);
   border-radius: 10px;
@@ -1090,8 +1090,11 @@ section.show {
   .project-title-tools {
     grid-row: 1/2;
   }
+
+  /* rights */
   .wordpress-site-description,
-  .aurora-grove-description {
+  .aurora-grove-description,
+  .leo-site-description {
     grid-row: 3/4;
   }
   .reference-letters {
