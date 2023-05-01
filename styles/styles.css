@@ -179,6 +179,10 @@ hr {
   text-align: center;
 }
 
+.drop-down-header:hover {
+  color: var(--teal);
+}
+
 .drop-down > a:hover {
   color: var(--teal);
   transition: 0.5s ease-in-out;
