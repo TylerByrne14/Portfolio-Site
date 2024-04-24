@@ -519,7 +519,8 @@ section.show {
 .fa-react,
 .fa-figma,
 .fa-git-alt,
-.fa-bootstrap {
+.fa-bootstrap,
+.fa-angular {
   font-size: 7rem;
   color: var(--teal);
 }
@@ -968,7 +969,7 @@ section.show {
   .fa-js-square,
   .fa-python,
   .fa-wordpress,
-  .fa-database,
+  .fa-angular .fa-database,
   .fa-react,
   .fa-figma,
   .fa-git-alt,
@@ -1178,6 +1179,7 @@ section.show {
   .fa-js-square,
   .fa-python,
   .fa-wordpress,
+  .fa-angular,
   .fa-database,
   .fa-react,
   .fa-figma,
@@ -1423,6 +1425,7 @@ section.show {
   .fa-js-square,
   .fa-python,
   .fa-wordpress,
+  .fa-angular,
   .fa-sass,
   .fa-database,
   .fa-react,
